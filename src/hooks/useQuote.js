@@ -8,8 +8,11 @@ export const useQuote = () => {
   const handleClick = (event) => {
     event.preventDefault();
     const generatedSentence = new Text(ron.text);
-    setQuote(generatedSentence.makeSentence());
-    console.log('click', quote);
+    let testQuote = generatedSentence.makeSentence();
+    while(typeof testQuote === 'object'){
+      testQuote = generatedSentence.makeSentence();
+    }
+    setQuote(testQuote);
 
   };
 
