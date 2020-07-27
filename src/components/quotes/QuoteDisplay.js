@@ -8,7 +8,7 @@ const QuoteDisplay = () => {
 
   return (
     <div className={styles.quotes}>
-      <button onClick={handleClick}> Generate </button>
+      <button onClick={handleClick}> SPEAK </button>
       <Quote quote={quote} />
     </div>
   );

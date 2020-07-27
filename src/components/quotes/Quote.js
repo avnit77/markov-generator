@@ -2,16 +2,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './Quotes.css';
 
-const Quote = ({ text }) => {
+const Quote = ({ quote }) => {
   return (
     <div className={styles.quote}>
-      <p>{text}</p>
+      <p>{quote}</p>
     </div>
   );
 };
 
 Quote.propTypes = {
-  text: PropTypes.string.isRequired,
+  quote: PropTypes.string.isRequired,
 };
 
 export default Quote;

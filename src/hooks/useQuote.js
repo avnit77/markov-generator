@@ -9,6 +9,7 @@ export const useQuote = () => {
     event.preventDefault();
     const generatedSentence = new Text(ron.text);
     setQuote(generatedSentence.makeSentence());
+    console.log('click', quote);
 
   };
 
